@@ -14,8 +14,8 @@ public class HelloWorldController {
     public @ResponseBody WebhookResponse webhook(@RequestBody String obj){
 
        // System.out.println(obj);
-       JSONObject obj = new JSONObject(obj);
-       String n = obj.getString("result");
-        return new WebhookResponse("Hello! " + n, "Text " + obj);
+       JSONObject obj1 = new JSONObject(obj);
+       String n = obj1.getString("result");
+        return new WebhookResponse("Hello! " + n, "Text " + obj1);
     }
 }
